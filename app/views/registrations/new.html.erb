@@ -15,7 +15,11 @@
   <div class="mb-3">
     <%= form.label :password_confirmation %>
 
-    <%= form.password_field :password_confirmation, class: "form-control mt-1", placeholder: "Password confirmation" %>
+    <%= form.password_field :password_confirmation, class: "form-control mt-1", placeholder: "Password" %>
+  </div>
+
+  <div class="mb-3">
+    <%= form.submit "Sign Up", class: "btn btn-primary" %>
   </div>
 
 <% end %>
