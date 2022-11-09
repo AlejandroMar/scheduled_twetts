@@ -4,7 +4,9 @@
   <div class="container">
     <% if @user %>
       Logged in as: <%= @user.email %>
-    <% end %></div>
+    <% end %>
+  </div>
+  <%= button_to "Logout", logout_path, method: :delete %>
 
 </div>
 
