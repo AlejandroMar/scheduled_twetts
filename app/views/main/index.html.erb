@@ -2,11 +2,11 @@
   <h1>Welcome to Scheduled tweets</h1>
 
   <div class="container">
-    <% if @user %>
-      Logged in as: <%= @user.email %>
+    <% if Current.user %>
+      Logged in as: <%= Current.user.email %>
     <% end %>
   </div>
-  <%= button_to "Logout", logout_path, method: :delete %>
+
 
 </div>
 
