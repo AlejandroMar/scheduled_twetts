@@ -25,14 +25,14 @@
           <li class="nav-item">
             <%= button_to "Logout", logout_path, method: :delete, class: "btn btn-outline-secondary" %>
           </li>
-          <span class="navbar-text ms-3"><%= Current.user.email %></span>
+          <%= link_to Current.user.email, edit_password_path, class: "nav-link" %>
 
         <% else %>
           <li class="nav-item">
             <%= link_to "Sign up", sign_up_path, class: "nav-link" %>
           </li>
           <li class="nav-item">
-            <%= link_to "Sign in", sign_in_path, class: "nav-link" %>
+            <%= link_to "Log in", sign_in_path, class: "nav-link" %>
           </li>
         <% end %>
 
